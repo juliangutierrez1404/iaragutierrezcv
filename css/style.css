@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(https://www.falti.cz/cache/img/f32da918e15744e8a9b3d96f167182cc-w1400-75892072120363VECTEEZYWHITE-BACKGROUND-02RD0421-REV-01GENERATED.JPG);
+    background-attachment: fixed;
+}
+
+/**Header styles**/
+
+.header {
+    background-color: #e2e8f0;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+/**Logo**/
+
+.title {
+    padding-left: 2rem;
+}
+
+.title h1 {
+    font-size: 2.5rem;
+    font-weight: 1000;
+    border-bottom: solid 2px #0f172a;
+}
+
+.title h4 {
+    background-color: #0f172a;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #e2e8f0;
+    margin-top: .7rem;
+    margin-bottom: .7rem;
+    border-radius: .5rem;
+}
+
+/**Navegador**/
+
+.navOptions {
+    height: 100%;
+    width: 50vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navOptions li a{
+    font-size: 1.1rem;
+    padding: .6rem;
+    border-radius: 1rem;
+}
+
+.navOptions li a:hover {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    transition-duration: 200ms;
+}
+/**Experiencia**/
+
+.experience {
+    width: 65%;
+    height: 11rem;
+    margin: 1rem 10rem 1rem auto;
+    background-color: #e2e8f0;
+    display: grid;
+    grid-template-columns: 20% 70%;
+    grid-template-rows: 20% 20% 80%;
+    justify-content: center;
+    border-radius: .5rem;
+    row-gap: 5px;
+}
+
+.experienceTitle {
+    font-size: 1.7rem;
+    font-weight: 800;
+    text-align: center;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.experience img {
+    grid-row: 1/4;
+    grid-column: 1/2;
+    position: relative;
+    top: 10%;
+    z-index: 1;
+}
+
+.experience span {
+    font-size: 1.1rem;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.experience p {
+    font-size: 1.1rem;
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+/**Sobre mí**/
+
+.aboutMe {
+    background-color: #e2e8f0;
+    margin-right: auto;
+    margin-left: 10rem;
+    margin-top: 2rem;
+    margin: 2rem auto 2rem 10rem;
+    width: 65%;
+    border-radius: .5rem;
+}
+
+.aboutMe h2 {
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: 800;
+}
+
+.aboutMe p {
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.aboutMe a {
+    background-color: #cbd5e1;
+    padding: .8rem;
+    border-radius: .3rem;
+}
+
+.aboutMe a:hover {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    transition-duration: 200ms;
+}
+
+.aboutMe a span {
+    font-weight: 850;
+    font-size: 1.2rem;
+}
+
+/**Educación**/
+
+.education {
+    background-color: #e2e8f0;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.education h3 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.9rem;
+    font-weight: 1000;
+}
+
+/**Data Science**/
+
+.dataScience {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.dataScienceText {
+    font-size: 1.1rem;
+    background-color: #cbd5e1;
+    border-radius: .5rem;
+}
+
+/**Data analytics**/
+
+.dataAnalyticsTitle {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.dataAnalytics {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: auto;
+    background-color: #cbd5e1;
+    border-radius: .5rem;
+}
+
+.dataAnalyticsText {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+
+.certificate img{
+    border-radius: .5rem;
+}
+
+.certificate img:hover {
+    transform: scale(1.010);
+    transition-duration: 400ms;
+}
+
+/**Licenciatura en economia**/
+
+.economia {
+    font-size: 1.3rem;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.economiaDiv {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 35%;
+    background-color: #cbd5e1;
+    border-radius: .5rem;
+    margin-top: .8rem;
+    margin-bottom: .8rem;
+}
+
+.economiaText {
+    font-size: 1.1rem;
+}
+
+/**Habilidades**/
+
+.bgImg {
+    background-image: url(https://calzadopasofino.com/wp-content/uploads/2021/05/4935872-1.jpg);
+    background-attachment: fixed;
+    padding-bottom: 2rem;
+}
+
+.skillsTitle {
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+.sql p, .powerBi p, .excel p, .photoShop p, .idiomas p, .python p {
+    font-size: 1.1rem;
+    padding-left: 1rem;
+}
+
+.sql, .excel, .idiomas {
+    width: 65%;
+    position: relative;
+    margin-right: auto;
+    margin-left: 10rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    background-color: #e2e8f0;
+    align-items: center;
+    border-radius: .5rem;
+}
+
+.powerBi, .photoShop, .python {
+    width: 65%;
+    position: relative;
+    margin-left: auto;
+    margin-right: 10rem;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #e2e8f0;
+    align-items: center;
+    border-radius: .5rem;
+}
+
+/**Contacto**/
+
+.contact {
+    background-color: #e2e8f0;
+    width: 40%;
+    margin: auto;
+    border-radius: .5rem;
+}
+
+.contact h2 {
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+.contactosLinkedIn, .contactosEmail, .contactosWhatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: #cbd5e1 solid 2px;
+}
+
+.link, .emailText {
+    font-size: 1.1rem;
+    font-style: oblique;
+    font-weight: 550;
+    border-radius: .3rem;
+}
+
+.link:hover {
+    color: #1e40af;
+}
+
+.waText {
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: .3rem;
+}
+
+.waText:hover {
+    background-color: #cbd5e1;
+    font-size: 1.150rem;
+    transition-duration: 300ms;
+}
+
+.emailText:hover {
+    background-color: #cbd5e1;
+    font-size: 1.150rem;
+    cursor: default;
+    transition-duration: 300ms;
+}
+
+/**Pie de la página / Footer**/
+
+footer {
+    background-color: #e2e8f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerTitle {
+    padding-left: 2rem;
+}
+
+.footerTitle h2 {
+    font-size: 2rem;
+    font-weight: 1000;
+    border-bottom: solid 2px #0f172a;
+}
+
+.footerTitle h3 {
+    font-size: 1.3rem;
+    color: #e2e8f0;
+    background-color: #0f172a;
+    text-align: center;
+    border-radius: .5rem;
+}
+
+.footerLinks {
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footerLinks a:hover {
+    transform: scale(0.9);
+    transition-duration: 200ms;
+}
+
+.scrollAbove {
+    position: relative;
+    background-color: #0f172a;
+    border: #0f172a solid .2rem;
+    height: 2rem;
+    width: 4rem;
+    top: 2rem;
+    border-top-left-radius: .6rem;
+    border-top-right-radius: .6rem;
+    cursor: pointer;
+}
+
+.scrollAbove::before,
+.scrollAbove::after {
+    content: '';
+    position: absolute;
+    left: 36%;
+    border: #e2e8f0 solid 2px;
+    top: .5rem;
+    width: 1rem;
+    height: 1rem;
+    transform: translate(50% 50%);
+    transform: rotate(45deg);
+    border-bottom: transparent;
+    border-right: transparent;
+    animation: scrollAbove 0.8s ease-in-out infinite;
+}
+
+@keyframes scrollAbove {
+    0% {
+        opacity: 1;
+        top: 0.3rem;
+    }
+    30% {
+        opacity: 1;
+        top: 0.5rem;
+    }
+    60% {
+        opacity: 0;
+        top: 0.650rem;
+    }
+    100% {
+        opacity: 1;
+        top: 0.250rem;
+    }
+}
