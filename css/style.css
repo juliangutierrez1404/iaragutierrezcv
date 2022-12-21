@@ -72,6 +72,10 @@ body {
     color: #e2e8f0;
     transition-duration: 200ms;
 }
+
+.navOptions li a:active{
+    background-color: #475569;
+}
 /**Experiencia**/
 
 .experience {
@@ -119,9 +123,6 @@ body {
 
 .aboutMe {
     background-color: #e2e8f0;
-    margin-right: auto;
-    margin-left: 10rem;
-    margin-top: 2rem;
     margin: 2rem auto 2rem 10rem;
     width: 65%;
     border-radius: .5rem;
@@ -138,22 +139,28 @@ body {
     font-size: 1.1rem;
 }
 
-.aboutMe a {
+.aboutMe a span {
+    font-weight: 850;
+    font-size: 1.2rem;
+}
+
+.cvButton {
     background-color: #cbd5e1;
     padding: .8rem;
     border-radius: .3rem;
 }
 
-.aboutMe a:hover {
+.cvButton:hover {
     background-color: #0f172a;
     color: #e2e8f0;
     transition-duration: 200ms;
 }
 
-.aboutMe a span {
-    font-weight: 850;
-    font-size: 1.2rem;
+.button:active {
+    transform: translateY(4px);
+    transition-duration: 100ms;
 }
+
 
 /**Educación**/
 
@@ -175,6 +182,7 @@ body {
     font-size: 1.3rem;
     font-weight: bold;
 }
+
 
 .dataScienceText {
     font-size: 1.1rem;
@@ -313,6 +321,10 @@ body {
     color: #1e40af;
 }
 
+.link:active {
+    color: #6d28d9;
+}
+
 .waText {
     font-size: 1.1rem;
     font-weight: bold;
@@ -323,6 +335,10 @@ body {
     background-color: #cbd5e1;
     font-size: 1.150rem;
     transition-duration: 300ms;
+}
+
+.waText:active {
+    background-color: #94a3b8;
 }
 
 .emailText:hover {
@@ -366,8 +382,12 @@ footer {
 }
 
 .footerLinks a:hover {
-    transform: scale(0.9);
+    transform: scale(0.950);
     transition-duration: 200ms;
+}
+
+.footerLinks a:active {
+    transform: scale(0.8);
 }
 
 .scrollAbove {
@@ -398,6 +418,8 @@ footer {
     animation: scrollAbove 0.8s ease-in-out infinite;
 }
 
+/**Animaciones**/
+
 @keyframes scrollAbove {
     0% {
         opacity: 1;
@@ -414,5 +436,131 @@ footer {
     100% {
         opacity: 1;
         top: 0.250rem;
+    }
+}
+
+/**1024px Media querie**/
+
+@media (max-width: 1024px) {
+
+    /*Laptop header*/
+
+    .header {
+        justify-content: space-around;
+    }
+
+    .title {
+        padding-left: 0;
+    }
+
+    /*Laptop experiencia*/
+
+    .experience {
+        height: 11rem;
+        width: 75%;
+        margin: 2rem 3rem 0 auto;
+    }
+
+    .experienceTitle {
+        font-size: 1.5rem;
+    }
+
+    .experience span {
+        font-size: 1.050rem;
+    }
+
+    .experience p {
+        font-size: 1rem;
+    }
+
+    /*Laptop sobre mí*/
+
+    .aboutMe {
+        width: 75%;
+        margin: 2rem auto 2rem 3rem;
+    }
+
+    .aboutMe h2 {
+        font-size: 1.5rem;
+    }
+
+    .aboutMe p {
+        font-size: 1rem;
+    }
+
+    /*Laptop educación*/
+
+    .education h3 {
+        font-size: 1.750rem;
+    }
+
+    /*Laptop Data Science*/
+
+    .dataScienceText {
+        font-size: 1.025rem;
+        text-align: center;
+        width: 75%;
+    }
+
+    /*Laptop Data Analytics*/
+    
+    .dataAnalytics {
+        width: 75%;
+    }
+
+    .dataAnalyticsText {
+        font-size: 1.025rem;
+    }
+
+    /*Laptop economia*/
+
+    .economiaDiv {
+        width: 45%;
+        height: 100%;
+    }
+
+    .economiaText {
+        font-size: 1.080rem;
+    }
+
+    /*Laptop habilidades*/ 
+
+    .skillsTitle {
+        font-size: 1.5rem;
+    }
+
+    .sql p, .powerBi p, .excel p, .photoShop p, .idiomas p, .python p {
+        font-size: 1rem;
+    }
+
+    .sql, .excel, .idiomas {
+        width: 75%;
+        margin-right: auto;
+        margin-left: 3rem;
+    }
+
+    .powerBi, .photoShop, .python {
+        width: 75%;
+        margin-right: 3rem;
+        margin-left: auto;
+    }
+
+    /*Laptop contacto*/
+
+    .link, .emailText {
+        font-size: 1rem;
+    }
+
+    .emailText:hover {
+        font-size: 1.1rem;
+    }
+
+    .waText {
+        font-size: 1rem;
+    }
+
+    .waText:hover {
+        font-size: 1.1rem;
+        transition-duration: 300ms;
     }
 }
