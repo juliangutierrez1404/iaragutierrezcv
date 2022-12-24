@@ -700,7 +700,10 @@ footer {
     }
 
     .dataAnalyticsText {
-        line-height: normal;
+        padding: 1rem;
+        padding-bottom: 0;
+        padding-top: .2rem;
+        line-height: 2rem;
         font-size: .980rem;
     }
 
