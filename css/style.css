@@ -717,7 +717,7 @@ footer {
         left: 1.5rem;
         top: 1rem;
         background-color: #e2e8f0;
-        width: 40%;
+        width: 50%;
         padding: .8rem;
         border-radius: .3rem;
         text-align: center;
@@ -778,6 +778,14 @@ footer {
 
     .contact h2 {
         font-size: 1.5rem;
+    }
+
+    .waText, .emailText {
+        font-size: .980rem;
+    }
+
+    .link {
+        font-size: .9rem;
     }
 
     /*Mobile footer*/
