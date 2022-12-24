@@ -27,6 +27,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400&family=Rubik:ital,wght@1,300&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -41,14 +42,29 @@
         </div>
 
         <!--Barra de navegación-->
-        <nav class="navMenu">
-            <ul class="navOptions">
-                <li><a href="#index">Inicio</a></li>
-                <li><a href="#index">Sobre mí</a></li>
-                <li><a href="#educacion">Educación</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#contact">Contacto</a></li>
-                <li><a href="./assets/IaraGutierrezCV.pdf" download="iaragutierrezcv">CV</a></li>
+        <nav class="navMenu" id="myTopNav">
+            <ul>
+                <li>
+                    <a href="#index">Inicio</a>
+                </li>
+                <li>
+                    <a href="#index">Sobre mí</a>
+                </li>
+                <li>
+                    <a href="#educacion">Educación</a>
+                </li>
+                <li>
+                    <a href="#skills">Habilidades</a>
+                </li>
+                <li>
+                    <a href="#contact">Contacto</a>
+                </li>
+                <li>
+                    <a href="./assets/IaraGutierrezCV.pdf" download="iaragutierrezcv">CV</a>
+                </li>
+                <a href="javascript:void(0)" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                </a>
             </ul>
         </nav>
     </header>
@@ -115,6 +131,11 @@
                     target="_blank">
                     <img src="./assets/certificado.jpeg" alt="Certificado de Coderhouse">
                 </a>
+                <div>
+                    <a href="https://drive.google.com/file/d/1ASyaEbifLH3sYzHSeIkGqswW3LaudcLT/view?usp=share_link" class="certificadoBoton shadow-md" target="_blank">
+                        <span>Mi certificado</span>
+                    </a>
+                </div>
             </div>
             <p class="economia pt-2">Licenciatura en economía - UBA</p>
             <div class="economiaDiv mx-auto shadow-md">
@@ -218,7 +239,7 @@
                 <h3 class="px-5 my-2">Analista de datos</h3>
             </a>
         </div>
-        <a href="#index">
+        <a class="aboveButton" href="#index">
             <div class="scrollAbove select-none"></div>
         </a>
         <div class="footerLinks select-none">
@@ -231,6 +252,17 @@
             </a>
         </div>
     </footer>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopNav");
+          if (x.className === "navMenu") {
+            x.className += " responsiveMenu";
+          } else {
+            x.className = "navMenu";
+          }
+        }
+    </script>
 </body>
 
 </html>

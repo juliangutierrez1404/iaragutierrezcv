@@ -25,6 +25,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     z-index: 10;
 }
 
@@ -53,28 +54,37 @@ body {
 
 /**Navegador**/
 
-.navOptions {
+.navMenu {
     height: 100%;
     width: 50vw;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
 }
 
-.navOptions li a{
+.navMenu ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navMenu ul li a{
     font-size: 1.1rem;
     padding: .6rem;
-    border-radius: 1rem;
+    border-radius: .6rem;
 }
 
-.navOptions li a:hover {
+.navMenu ul li a:hover {
     background-color: #0f172a;
     color: #e2e8f0;
     transition-duration: 200ms;
 }
 
-.navOptions li a:active{
+.navMenu ul li a:active {
     background-color: #475569;
+}
+
+.icon {
+    display: none;
 }
 /**Experiencia**/
 
@@ -219,8 +229,17 @@ body {
 }
 
 .certificate img:hover {
-    transform: scale(1.010);
-    transition-duration: 400ms;
+    transform: scale(0.995);
+    transition-duration: 300ms;
+}
+
+.certificate:active {
+    transform: scale(0.970);
+    transition-duration: 200ms;
+}
+
+.certificadoBoton {
+    display: none;
 }
 
 /**Licenciatura en economia**/
@@ -439,7 +458,7 @@ footer {
     }
 }
 
-/**1024px Media querie**/
+/**Laptop 1024px Media querie**/
 
 @media (max-width: 1024px) {
 
@@ -562,5 +581,261 @@ footer {
     .waText:hover {
         font-size: 1.1rem;
         transition-duration: 300ms;
+    }
+}
+
+/**Tablet 768px media querie**/
+
+@media (max-width: 768px) {
+
+    /*Tablet titulo*/
+
+    .title {
+        padding-left: 0;
+    }
+
+    .title h1 {
+        font-size: 2rem;
+    }
+
+    .title h4 {
+        font-size: 1rem;
+        margin-top: .5rem;
+    }
+
+    /*Tablet navegador*/
+
+    .navMenu {
+        justify-content: space-between;
+    }
+
+    .navMenu li a{
+        font-size: 1rem;
+    }
+}
+
+/**Mobile L (425px) media querie**/
+
+@media (max-width: 426px) {
+
+    /*Mobile header*/
+
+    .title h1 {
+        font-size: 1.7rem;
+    }
+
+    .title h4 {
+        font-size: 1.2rem;
+    }
+
+    /*Mobile navegador*/
+
+    .navMenu ul li a {
+        font-size: 0.980rem;
+    }
+
+    .navMenu ul li:not(:first-child) {
+        display: none;
+    }
+
+    .navMenu a.icon {
+        position: absolute;
+        top: 1.8rem;
+        right: 10px;
+        display: block;
+    }
+
+    /*Mobile experiencia*/
+
+    .experience {
+        width: 90%;
+        height: 100%;
+        grid-template-rows: 10% 20% 80%;
+        margin: auto;
+        margin-top: 1.2rem;
+    }
+
+    .experienceTitle {
+        margin-left: 3rem;
+    }
+
+    .experience img {
+        top: 30%;
+        right: .5rem;
+    }
+
+    .experience span {
+        text-align: center;
+    }
+
+    .experience p {
+        font-size: .980rem;
+        margin-left: .5rem;
+    }
+
+    /*Mobile sobre mí*/
+
+    .aboutMe {
+        width: 90%;
+        margin: 2rem auto 2rem auto;
+    }
+
+    .aboutMe p {
+        font-size: .980rem;
+    }
+
+    /*Mobile Data Science*/
+
+    .dataScienceText {
+        font-size: .980rem;
+        text-align: left;
+        width: 90%;
+    }
+
+    /*Mobile Data Analytics*/
+
+    .dataAnalytics {
+        width: 90%;
+        display: block;
+    }
+
+    .dataAnalyticsText {
+        line-height: normal;
+        font-size: .980rem;
+    }
+
+    .certificate {
+        display: none;
+    }
+
+    .certificadoBoton {
+        display: block;
+        position: relative;
+        left: 1.5rem;
+        top: 1rem;
+        background-color: #e2e8f0;
+        width: 40%;
+        padding: .8rem;
+        border-radius: .3rem;
+        text-align: center;
+    }
+
+    .certificadoBoton span {
+        font-size: 1.1rem;
+        font-weight: 1000;
+    }
+
+    .certificadoBoton:active {
+        background-color: #0f172a;
+        color: #e2e8f0;
+        transform: translateY(4px);
+        transition-duration: 100ms;
+    }
+
+    /*Mobile economía*/
+
+    .economiaDiv {
+        width: 90%;
+    }
+
+    .economiaText {
+        font-size: .980rem;
+    }
+
+    .economiaDiv img {
+        height: 128px;
+        width: 128px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    /*Mobile habilidades*/
+
+    .sql p, .powerBi p, .excel p, .photoShop p, .idiomas p, .python p {
+        font-size: .980rem;
+    }
+
+    .sql, .excel, .idiomas {
+        width: 95%;
+        margin-right: auto;
+        margin-left: 0;
+    }
+
+    .powerBi, .photoShop, .python {
+        width: 95%;
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    /*Mobile contacto*/
+
+    .contact {
+        width: 90%;
+    }
+
+    .contact h2 {
+        font-size: 1.5rem;
+    }
+
+    /*Mobile footer*/
+
+    footer {
+        justify-content: space-around;
+    }
+
+    .footerTitle {
+        padding: 0;
+    }
+
+    .footerTitle a h2 {
+        font-size: 1.4rem;
+    }
+
+    .footerTitle a h3 {
+        font-size: 1.1rem;
+    }
+
+    .footerLinks {
+        gap: .6rem;
+        justify-content: space-between;
+    }
+
+    .aboveButton {
+        display: none;
+    }
+}
+
+/*Menú responsive mobile (425px)*/
+
+@media (max-width: 426px) {
+
+    .navMenu.responsiveMenu {
+        position: relative;
+
+    }
+
+    .navMenu.responsiveMenu .icon {
+        position: absolute;
+        right: -5px;
+        top: 1.8rem;
+    }
+
+    .navMenu.responsiveMenu ul li{
+        width: 100%;
+        float: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navMenu.responsiveMenu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 85%;
+    }
+
+    .navMenu.responsiveMenu ul li a {
+        border-radius: 0.2rem;
     }
 }
